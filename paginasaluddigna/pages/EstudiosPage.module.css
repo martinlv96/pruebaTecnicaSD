@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  justify-content: space-between; /* Espacio entre las secciones */
+  flex-wrap: wrap; /* Envuelve las secciones en pantallas pequeñas */
+}
+
+.section {
+  
+  flex-basis: calc(50% - 10px); /* Asegura que cada sección ocupe el 50% del contenedor con un pequeño espacio entre ellas */
+  margin-bottom: 20px; /* Espacio entre las secciones */
+}
+
+/* Media Query para hacer la página responsiva */
+@media (max-width: 768px) {
+  .section {
+    flex-basis: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+  }
+}
